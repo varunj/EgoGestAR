@@ -11,12 +11,12 @@ from dtw import dtw
 import operator
 
 # canvas size M*N
-M = 800
-N = 600
+M = 1280
+N = 800
 
 # read ground truths
 dic_grndFiles = {}
-for fileName in glob.glob("./grnd/*"):
+for fileName in glob.glob("./grnd_sparse_sparse/*"):
     file = pd.read_csv(fileName, delim_whitespace = True, header = None)
     arr = np.array(file.ix[:, :])
     dic_grndFiles[fileName] = arr 
