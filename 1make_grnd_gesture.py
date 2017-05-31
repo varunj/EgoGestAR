@@ -3,10 +3,12 @@ from kivy.app import App
 from kivy.uix.floatlayout import FloatLayout
 from kivy.graphics import Color, Ellipse, Line
 from kivy.gesture import Gesture, GestureDatabase
+import time
 
 # canvas size M*N
-M = 800
-N = 600
+M = 1280
+N = 800
+time_start = 0
 
 def simplegesture(name, point_list):
     """
@@ -30,6 +32,9 @@ class GestureBoard(FloatLayout):
 
 
     def on_touch_down(self, touch):
+        global time_start
+        time_start = time.clock()
+
         # start collecting points in touch.ud create a line to display the points
         userdata = touch.ud
         with self.canvas:
@@ -48,16 +53,18 @@ class GestureBoard(FloatLayout):
             pass
 
     def on_touch_up(self, touch):
-        # touch is over, display informations, and check if it matches some known gesture.
-        g = simplegesture('', list(zip(touch.ud['line'].points[::2],
-                                       touch.ud['line'].points[1::2])))
+        # save time to file
+        global time_start
+        fTime = open('gesture_out_time.txt', 'a')
+        fTime.write(str(time.clock()-time_start) + '\n')
+        fTime.close()
+
         # save points to file
         f = open('gesture_out.txt', 'a')
         pointList = touch.ud['line'].points
         for x in range(0, len(pointList)-1, 2):
         	f.write("%e" %float(pointList[x]*640.0/M) + ' ' + "%e" %float((N-pointList[x+1])*480.0/N))
         	f.write('\n')
-
         f.write('-----------\n')
         # erase the lines on the screen, this is a bit quick&dirty, since we can have another touch event on the way...
         self.canvas.clear()
