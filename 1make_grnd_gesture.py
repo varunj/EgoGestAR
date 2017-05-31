@@ -30,7 +30,6 @@ class GestureBoard(FloatLayout):
         super(GestureBoard, self).__init__()
         self.gdb = GestureDatabase()
 
-
     def on_touch_down(self, touch):
         global time_start
         time_start = time.clock()
@@ -69,11 +68,9 @@ class GestureBoard(FloatLayout):
         # erase the lines on the screen, this is a bit quick&dirty, since we can have another touch event on the way...
         self.canvas.clear()
 
-
 class DemoGesture(App):
     def build(self):
         return GestureBoard()
-
-
+        
 if __name__ == '__main__':
     DemoGesture().run()

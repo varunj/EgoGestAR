@@ -16,7 +16,7 @@ N = 800
 
 # read ground truths
 dic_grndFiles = {}
-for fileName in glob.glob("./grnd_sparse_sparse/*"):
+for fileName in glob.glob("./train1_sparse/*"):
     file = pd.read_csv(fileName, delim_whitespace = True, header = None)
     arr = np.array(file.ix[:, :])
     dic_grndFiles[fileName] = arr 
@@ -31,7 +31,6 @@ def simplegesture(name, point_list):
     g.name = name
     return g
 
-
 class GestureBoard(FloatLayout):
     """
     Our application main widget, derived from touchtracer example, use data
@@ -40,7 +39,6 @@ class GestureBoard(FloatLayout):
     def __init__(self, *args, **kwargs):
         super(GestureBoard, self).__init__()
         self.gdb = GestureDatabase()
-
 
     def on_touch_down(self, touch):
         # start collecting points in touch.ud create a line to display the points
@@ -61,9 +59,6 @@ class GestureBoard(FloatLayout):
             pass
 
     def on_touch_up(self, touch):
-        # touch is over, display informations, and check if it matches some known gesture.
-        g = simplegesture('', list(zip(touch.ud['line'].points[::2],
-                                       touch.ud['line'].points[1::2])))
         # save points to file
         f = open('xgesture_temp.txt', 'w+')
         pointList = touch.ud['line'].points
