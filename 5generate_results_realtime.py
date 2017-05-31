@@ -16,7 +16,7 @@ N = 600
 
 # read ground truths
 dic_grndFiles = {}
-for fileName in glob.glob("./grnd_sparse_sparse/*"):
+for fileName in glob.glob("./grnd/*"):
     file = pd.read_csv(fileName, delim_whitespace = True, header = None)
     arr = np.array(file.ix[:, :])
     dic_grndFiles[fileName] = arr 
