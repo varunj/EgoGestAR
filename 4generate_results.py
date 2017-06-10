@@ -22,7 +22,7 @@ for fileName in glob.glob("./train1_sparse/*"):
 
 # read input files
 dic_seedFiles = {}
-for fileName in glob.glob("./train2/*"):
+for fileName in glob.glob("./test1/*"):
 	file = pd.read_csv(fileName, delim_whitespace = True, header = None)
 	arr = np.array(file.ix[:, :])	
 	dic_seedFiles[fileName] = arr 

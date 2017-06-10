@@ -9,7 +9,7 @@ from math import sqrt
 from pprint import pprint
 
 dic_grndFiles = {}
-for fileName in glob.glob("./train2_resampled200/*"):
+for fileName in glob.glob("./train2_resampled_200_10/*"):
 	file = pd.read_csv(fileName, delim_whitespace = True, header = None)
 	arr = np.array(file.ix[:, :])
 	dic_grndFiles[fileName] = arr 

@@ -4,7 +4,7 @@ import pprint
 
 dic = {}
 dicFiles = {}
-for fileName in glob.glob("./train2_resampled200/*.txt"):
+for fileName in glob.glob("./train2/*.txt"):
 	with open(fileName, "r") as f:
 		nosLines = sum(1 for eachLine in open(fileName, "r"))
 		if not nosLines in dic:

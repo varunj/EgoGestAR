@@ -13,6 +13,7 @@ import pandas as pd
 from keras.models import Sequential
 from keras.layers import Dense
 from keras.layers import LSTM
+from keras.utils import plot_model
 
 CLASSES = ('up','del','down','left', 'ques','star','tick','right', 'carret','square','circlec','circlecc')
 NOS_CLASSES = len(CLASSES)
@@ -56,22 +57,26 @@ target = shuffle_data(target, seq)
 
 model = Sequential()  
 model.add(LSTM(200, input_shape=(2,200), return_sequences=True))
-print(model.layers[-1].output_shape)
-
-model.add(LSTM(100, return_sequences=True))
-print(model.layers[-1].output_shape)
-
 model.add(Flatten())
-print(model.layers[-1].output_shape)
-
 model.add(Dense(NOS_CLASSES, activation='softmax'))
-print(model.layers[-1].output_shape)
 
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-model.fit(data, target, epochs=1000, batch_size=10, verbose=2, validation_split=0.30)
+history = model.fit(data, target, epochs=300, batch_size=10, verbose=2, validation_split=0.30)
 
 model.save('my_model.h5')
 model.save_weights('my_model_weights.h5')
 
-scores = model.predict(tq)
-print(scores)
+plt.plot(history.history['acc'])
+plt.plot(history.history['val_acc'])
+plt.title('model accuracy')
+plt.ylabel('accuracy')
+plt.xlabel('epoch')
+plt.legend(['train', 'test'], loc='upper left')
+plt.savefig('accuracy.png')
+plt.plot(history.history['loss'])
+plt.plot(history.history['val_loss'])
+plt.title('model loss')
+plt.ylabel('loss')
+plt.xlabel('epoch')
+plt.legend(['train', 'test'], loc='upper left')
+plt.savefig('loss.png')
