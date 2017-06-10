@@ -1,4 +1,3 @@
-# move to trainx_raw. make folder ./result/
 import glob
 import matplotlib.pyplot as plt
 import pprint
