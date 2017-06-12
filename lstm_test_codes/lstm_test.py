@@ -32,8 +32,8 @@ TARGET_LEN = 200
 M = 800
 N = 600
 
-model = load_model('my_model.h5')
-model.load_weights('my_model_weights.h5')
+model = load_model('my_model2.h5')
+model.load_weights('my_model_weights2.h5')
 
 def addBetween(inpList, x):
 	a = np.zeros(shape=(1,2))
