@@ -31,9 +31,9 @@ def shuffle_data(labels, seq):
 
 dataSeq = []
 targetSeq = []
-for fileName in glob.glob("../train2_resampled_200/*.txt"):
+for fileName in glob.glob("../zcomb/*.txt"):
 	file = pd.read_csv(fileName, delim_whitespace=True, header=None)
-	fname = fileName.split('_')[3]
+	fname = fileName.split('_')[-2]
 	arr = np.array(file.ix[:, :])
 	arr1 = np.transpose(arr)
 	targetarr = np.zeros(NOS_CLASSES)

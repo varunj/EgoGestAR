@@ -27,13 +27,15 @@ CLASSES = ('up','down','left','right','star','del','square','carret','tick','cir
 NOS_CLASSES = len(CLASSES)
 TARGET_LEN = 200
 # canvas size M*N
+# tab
 # M = 1280
 # N = 800
+# pc
 M = 800
 N = 600
 
-model = load_model('my_model5.h5')
-model.load_weights('my_model_weights5.h5')
+model = load_model('my_model7.h5')
+model.load_weights('my_model_weights7.h5')
 
 def addBetween(inpList, x):
 	a = np.zeros(shape=(1,2))
