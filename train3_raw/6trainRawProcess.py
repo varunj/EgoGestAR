@@ -3,7 +3,7 @@ import glob
 
 for fileName in glob.glob("./*.txt"):
 	fileNameSplit = fileName.replace('.', '_').split('_')
-	if (fileNameSplit[1] != 'time'):
+	if (fileNameSplit[2] != 'time'):
 		with open(fileName, "r") as f:
 			print('Processing for: ' + fileName)
 			c = 1
