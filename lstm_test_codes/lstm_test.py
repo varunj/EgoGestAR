@@ -96,8 +96,9 @@ class GestureBoard(FloatLayout):
 		arr = np.transpose(arr)
 		arr = arr.reshape(1,2,200)
 		result = model.predict(arr)
-		print(result)
-		print(CLASSES[np.argmax(result)])
+		
+		ans = sorted(zip(CLASSES, result[0]), key=lambda x: x[1])
+		print(ans)
 
 		# erase the lines on the screen, this is a bit quick&dirty, since we can have another touch event on the way...
 		self.canvas.clear()
