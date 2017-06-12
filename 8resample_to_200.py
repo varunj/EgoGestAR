@@ -1,3 +1,4 @@
+# processes folder trainx to generate trainx_resampled_200
 # works only if reduction is by a factor of atmost 2
 import glob
 import matplotlib.pyplot as plt
@@ -8,6 +9,7 @@ import scipy.interpolate
 import pandas as pd
 
 TARGET_LEN = 200
+PATHH = 'train2'
 
 def addBetween(inpList, x):
 	a = np.zeros(shape=(1,2))
@@ -17,8 +19,8 @@ def addBetween(inpList, x):
 	toReturn = np.append(toReturn, inpList[x:,:], axis=0)
 	return toReturn
 
-for fileName in glob.glob("./train2/*.txt"):
-	fileNameSplit = fileName.split('/')
+for fileName in glob.glob("./" + PATHH + "/*.txt"):
+	fileNameSplit = fileName.replace('\\', '/').split('/')
 	file = pd.read_csv(fileName, delim_whitespace = True, header = None)
 	arr = np.array(file.ix[:, :])
 	inplen = len(arr)
@@ -26,7 +28,6 @@ for fileName in glob.glob("./train2/*.txt"):
 	if (inplen < TARGET_LEN):
 		x = 1
 		while (inplen < TARGET_LEN):
-			print x
 			arr = addBetween(arr, x)
 			x = x + 2
 			if (x == len(arr)):
@@ -35,13 +36,13 @@ for fileName in glob.glob("./train2/*.txt"):
 
 	else:
 		listRem = []
-		for x in xrange(1, len(arr)):
+		for x in range(1, len(arr)):
 			if (x%2 == 0):
 				listRem.append(x)
 		listRem = listRem[:min(len(listRem), abs(TARGET_LEN-len(arr)))]
 		arr = np.delete(arr, listRem, axis=0)
 
 
-	ff = open('./train2_resampled200/' + fileNameSplit[2], 'a')
+	ff = open('./' + PATHH + '_resampled_' + str(TARGET_LEN) + '/' + fileNameSplit[-1], 'a')
 	for x in arr:
 		ff.write("%e" % x[0] + " %e" % x[1] + '\n')

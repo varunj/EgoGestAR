@@ -1,5 +1,5 @@
+# generates train_time_x and train_x
 from kivy.app import App
-
 from kivy.uix.floatlayout import FloatLayout
 from kivy.graphics import Color, Ellipse, Line
 from kivy.gesture import Gesture, GestureDatabase
@@ -54,12 +54,12 @@ class GestureBoard(FloatLayout):
     def on_touch_up(self, touch):
         # save time to file
         global time_start
-        fTime = open('gesture_out_time.txt', 'a')
+        fTime = open('train_time_.txt', 'a')
         fTime.write(str(time.clock()-time_start) + '\n')
         fTime.close()
 
         # save points to file
-        f = open('gesture_out.txt', 'a')
+        f = open('train_.txt', 'a')
         pointList = touch.ud['line'].points
         for x in range(0, len(pointList)-1, 2):
         	f.write("%e" %float(pointList[x]*640.0/M) + ' ' + "%e" %float((N-pointList[x+1])*480.0/N))

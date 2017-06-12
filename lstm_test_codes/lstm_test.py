@@ -23,7 +23,7 @@ import scipy as sp
 import scipy.interpolate
 
 
-CLASSES = ('up','del','down','left', 'ques','star','tick','right', 'carret','square','circlec','circlecc')
+CLASSES = ('up','down','left','right','star','del','square','carret','tick','circlecc')
 NOS_CLASSES = len(CLASSES)
 TARGET_LEN = 200
 # canvas size M*N
@@ -32,8 +32,8 @@ TARGET_LEN = 200
 M = 800
 N = 600
 
-model = load_model('my_model2.h5')
-model.load_weights('my_model_weights2.h5')
+model = load_model('my_model5.h5')
+model.load_weights('my_model_weights5.h5')
 
 def addBetween(inpList, x):
 	a = np.zeros(shape=(1,2))

@@ -15,7 +15,7 @@ from keras.layers import Dense
 from keras.layers import LSTM
 from keras.utils import plot_model
 
-CLASSES = ('up','del','down','left', 'ques','star','tick','right', 'carret','square','circlec','circlecc')
+CLASSES = ('up','down','left','right','star','del','square','carret','tick','circlecc')
 NOS_CLASSES = len(CLASSES)
 
 def shuffle_data(labels, seq):
@@ -31,9 +31,9 @@ def shuffle_data(labels, seq):
 
 dataSeq = []
 targetSeq = []
-for fileName in glob.glob("../train2_resampled_200_10/*.txt"):
+for fileName in glob.glob("../train2_resampled_200/*.txt"):
 	file = pd.read_csv(fileName, delim_whitespace=True, header=None)
-	fname = fileName.split('_')[4]
+	fname = fileName.split('_')[3]
 	arr = np.array(file.ix[:, :])
 	arr1 = np.transpose(arr)
 	targetarr = np.zeros(NOS_CLASSES)
