@@ -8,7 +8,7 @@ from dtw import dtw
 from math import sqrt
 from pprint import pprint
 
-PATHH = 'train2_resampled_200'
+PATHH = 'train3_resampled_200'
 
 
 # make grid of 3x3

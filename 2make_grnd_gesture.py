@@ -6,8 +6,13 @@ from kivy.gesture import Gesture, GestureDatabase
 import time
 
 # canvas size M*N
-M = 1280
-N = 800
+# canvas size M*N
+# tab
+# M = 1280
+# N = 800
+# pc
+M = 800
+N = 600
 time_start = 0
 
 def simplegesture(name, point_list):
@@ -62,8 +67,10 @@ class GestureBoard(FloatLayout):
         f = open('train_.txt', 'a')
         pointList = touch.ud['line'].points
         for x in range(0, len(pointList)-1, 2):
-        	f.write("%e" %float(pointList[x]*640.0/M) + ' ' + "%e" %float((N-pointList[x+1])*480.0/N))
-        	f.write('\n')
+            f.write("%e" %float(pointList[x]*640.0/M) + ' ' + "%e" %float((N-pointList[x+1])*480.0/N))
+            print("%d" %float(pointList[x]*640.0/M) + ' ' + "%d" %float((N-pointList[x+1])*480.0/N))
+            print()
+            f.write('\n')
         f.write('-----------\n')
         # erase the lines on the screen, this is a bit quick&dirty, since we can have another touch event on the way...
         self.canvas.clear()
