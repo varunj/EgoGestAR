@@ -61,7 +61,7 @@ model.add(Flatten())
 model.add(Dense(NOS_CLASSES, activation='softmax'))
 
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-history = model.fit(data, target, epochs=300, batch_size=10, verbose=2, validation_split=0.30)
+history = model.fit(data, target, epochs=300, batch_size=10, verbose=2, validation_split=0.10)
 
 model.save('my_model.h5')
 model.save_weights('my_model_weights.h5')
