@@ -68,8 +68,6 @@ class GestureBoard(FloatLayout):
         pointList = touch.ud['line'].points
         for x in range(0, len(pointList)-1, 2):
             f.write("%e" %float(pointList[x]*640.0/M) + ' ' + "%e" %float((N-pointList[x+1])*480.0/N))
-            print("%d" %float(pointList[x]*640.0/M) + ' ' + "%d" %float((N-pointList[x+1])*480.0/N))
-            print()
             f.write('\n')
         f.write('-----------\n')
         # erase the lines on the screen, this is a bit quick&dirty, since we can have another touch event on the way...
