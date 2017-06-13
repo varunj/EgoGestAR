@@ -32,7 +32,7 @@ from pprint import pprint
 
 # make single image
 dic_grndFiles = {}
-for fileName in glob.glob("./train1_resampled_200/*"):
+for fileName in glob.glob("./train3_resampled_200/*"):
 	file = pd.read_csv(fileName, delim_whitespace = True, header = None)
 	arr = np.array(file.ix[:, :])
 	dic_grndFiles[fileName] = arr 
