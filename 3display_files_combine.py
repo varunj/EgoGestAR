@@ -8,7 +8,7 @@ from dtw import dtw
 from math import sqrt
 from pprint import pprint
 
-PATHH = 'train3_resampled_200'
+PATHH = 'train2_resampled_200'
 
 
 # make grid of 3x3
@@ -39,7 +39,7 @@ PATHH = 'train3_resampled_200'
 # 	print('done: ' + grnd_name)
 
 
-# make single image
+# make single image of 60 instances
 dic_grndFiles = {}
 for fileName in glob.glob("./" + PATHH + "/*.txt"):
 	file = pd.read_csv(fileName, delim_whitespace = True, header = None)
@@ -52,12 +52,12 @@ for fileName in glob.glob("./" + PATHH + "/*.txt"):
 		
 for grnd_name, arr_grnd in dic_grndFiles.items():
 
-	for each in arr_grnd:
-		plt.plot([x[0] for x in each], [-y[1] for y in each])
+	for each in arr_grnd[:60]:
+		plt.plot([x[0] for x in each], [480-y[1] for y in each])
 	plt.xlim([0,640])
-	plt.ylim([-480,0])
-	plt.xticks([0,640])
-	plt.yticks([-480,0])
-	plt.savefig('./images/all_' + grnd_name + '.png')
+	plt.ylim([0,480])
+	plt.xticks([0,640], fontsize=18)
+	plt.yticks([480], fontsize=18)
+	plt.savefig('./images/all60_' + grnd_name + '.png', format='png', dpi=1200, bbox_inches='tight')
 	plt.close()
 	print('done: ' + grnd_name)

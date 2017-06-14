@@ -27,10 +27,11 @@ dic['tick'] = [(100, 140), (160, 350), (540,160)]
 dic['circlecc'] = shift(pointsCircle(200))
 
 for gestureName, gesturePts in dic.items():
-	plt.plot([x[0] for x in gesturePts], [-y[1] for y in gesturePts])
+	plt.plot([x[0] for x in gesturePts], [480-y[1] for y in gesturePts], linewidth=4)
 	plt.xlim([0,640])
-	plt.ylim([-480,0])
-	plt.xticks([0,640])
-	plt.yticks([-480,0])
-	plt.savefig('single_' + gestureName + '.png')
+	plt.ylim([0,480])
+	plt.xticks([0,640], fontsize=18)
+	plt.yticks([480], fontsize=18)
+	plt.savefig('./images/single_' + gestureName + '.png', format='png', dpi=1200, bbox_inches='tight')
 	plt.close()
+	print(gestureName)

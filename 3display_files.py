@@ -45,5 +45,5 @@ for grnd_name, arr_grnd in dic_grndFiles.items():
 	plt.ylim([-480,0])
 	plt.xticks([0,640])
 	plt.yticks([-480,0])
-	plt.savefig('./images/single_' + grnd_name.split('_')[-2] + '.png')
+	plt.savefig('./images/single_' + grnd_name.split('_')[-2] + '.png', format='png', dpi=1200)
 	plt.close()
