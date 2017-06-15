@@ -21,7 +21,7 @@ for fileName in glob.glob("./ztemp200all/*.txt"):
 
 pprint.pprint(dicFiles)
 plt.xticks([0,50,100,150,200,250,300], fontsize=12)
-plt.yticks([0,5,10,15,20], fontsize=18)
+plt.yticks([0,5,10,15,20], fontsize=12)
 plt.bar(list(dic.keys()), dic.values(), color='g')
 plt.savefig('./images/hist.png', format='png', dpi=1200, bbox_inches='tight')
 
