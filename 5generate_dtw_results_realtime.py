@@ -11,8 +11,12 @@ from dtw import dtw
 import operator
 
 # canvas size M*N
-M = 1280
-N = 800
+# tab
+# M = 1280
+# N = 800
+# pc
+M = 800
+N = 600
 
 # read ground truths
 dic_grndFiles = {}

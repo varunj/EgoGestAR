@@ -6,7 +6,6 @@ from kivy.gesture import Gesture, GestureDatabase
 import time
 
 # canvas size M*N
-# canvas size M*N
 # tab
 # M = 1280
 # N = 800
