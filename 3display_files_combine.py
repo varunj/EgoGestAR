@@ -55,6 +55,6 @@ for grnd_name, arr_grnd in dic_grndFiles.items():
 	plt.ylim([0,480])
 	plt.xticks([0,640], fontsize=18)
 	plt.yticks([480], fontsize=18)
-	plt.savefig('./images/all60_' + grnd_name + '.eps', format='eps', bbox_inches='tight')
+	plt.savefig('./images/all60_' + grnd_name + '.svg', format='svg', bbox_inches='tight')
 	plt.close()
 	print('done: ' + grnd_name)
