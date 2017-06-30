@@ -32,7 +32,7 @@ from pprint import pprint
 
 # make single image
 dic_grndFiles = {}
-for fileName in glob.glob("./train3_resampled_200/*"):
+for fileName in glob.glob("./train1_resampled_200/*"):
 	file = pd.read_csv(fileName, delim_whitespace = True, header = None)
 	arr = np.array(file.ix[:, :])
 	dic_grndFiles[fileName] = arr 
@@ -45,5 +45,6 @@ for grnd_name, arr_grnd in dic_grndFiles.items():
 	plt.ylim([-480,0])
 	plt.xticks([0,640])
 	plt.yticks([-480,0])
-	plt.savefig('./images/single_' + grnd_name.split('_')[-2] + '.png', format='png', dpi=1200)
+	plt.show()
+	# plt.savefig('./images/single_' + grnd_name.split('_')[-2] + '.png', format='png', dpi=1200)
 	plt.close()

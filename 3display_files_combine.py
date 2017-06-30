@@ -1,14 +1,11 @@
 import glob, os
 import pandas as pd
 import numpy as np
-from scipy.spatial.distance import euclidean
-from fastdtw import fastdtw
 import matplotlib.pyplot as plt
-from dtw import dtw
 from math import sqrt
 from pprint import pprint
 
-PATHH = 'train2_resampled_200'
+PATHH = 'train1_resampled_200'
 
 
 # make grid of 3x3
@@ -58,6 +55,6 @@ for grnd_name, arr_grnd in dic_grndFiles.items():
 	plt.ylim([0,480])
 	plt.xticks([0,640], fontsize=18)
 	plt.yticks([480], fontsize=18)
-	plt.savefig('./images/all60_' + grnd_name + '.png', format='png', dpi=1200, bbox_inches='tight')
+	plt.savefig('./images/all60_' + grnd_name + '.eps', format='eps', bbox_inches='tight')
 	plt.close()
 	print('done: ' + grnd_name)

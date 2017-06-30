@@ -32,6 +32,6 @@ for gestureName, gesturePts in dic.items():
 	plt.ylim([0,480])
 	plt.xticks([0,640], fontsize=18)
 	plt.yticks([480], fontsize=18)
-	plt.savefig('./images/single_' + gestureName + '.png', format='png', dpi=1200, bbox_inches='tight')
+	plt.savefig('./images/single_' + gestureName + '.eps', format='eps', bbox_inches='tight')
 	plt.close()
 	print(gestureName)

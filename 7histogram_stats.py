@@ -6,7 +6,7 @@ import numpy as np
 # histogram of x:length of gestures, y:nos of gestures. place all files from trainx into zcomb
 dic = {}
 dicFiles = {}
-for fileName in glob.glob("./ztemp200all/*.txt"):
+for fileName in glob.glob("./ztempall/*.txt"):
 	with open(fileName, "r") as f:
 		nosLines = sum(1 for eachLine in open(fileName, "r"))
 		if not nosLines in dic:
@@ -22,13 +22,15 @@ for fileName in glob.glob("./ztemp200all/*.txt"):
 pprint.pprint(dicFiles)
 plt.xticks([0,50,100,150,200,250,300], fontsize=12)
 plt.yticks([0,5,10,15,20], fontsize=12)
+plt.xlabel('length of gesture')
+plt.ylabel('number of gestures')
 plt.bar(list(dic.keys()), dic.values(), color='g')
-plt.savefig('./images/hist.png', format='png', dpi=1200, bbox_inches='tight')
+plt.savefig('./images/hist.eps', format='eps', bbox_inches='tight')
 
 
-# mean stddev of lenth of gestures for each class. place all files from trainx into zcomb
+# mean stddev of lenth of gestures for each class. place all files from trainx into ztempall
 # dic = {}
-# for fileName in glob.glob("./train3/*.txt"):
+# for fileName in glob.glob("./ztempall/*.txt"):
 # 	with open(fileName, "r") as f:
 # 		gestureName = fileName.split('_')[-2]
 # 		nosLines = sum(1 for eachLine in open(fileName, "r"))
@@ -40,9 +42,9 @@ plt.savefig('./images/hist.png', format='png', dpi=1200, bbox_inches='tight')
 # for key, val in dic.items():
 # 	print(key, np.std(val), sum(val)*1.0/len(val))
 
-# mean stddev of time taken to draw gestures for each class. place all files from trainx into zcombtime
+# mean stddev of time taken to draw gestures for each class. place all files from trainx into ztempalltime
 # dic = {}
-# for fileName in glob.glob("./zcombtime/*.txt"):
+# for fileName in glob.glob("./ztempalltime/*.txt"):
 # 	with open(fileName, "r") as f:
 # 		gestureName = fileName.replace('.','_').split('_')[-2]
 # 		dic[gestureName] = [float(eachLine[:-1]) for eachLine in open(fileName, "r")]

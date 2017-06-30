@@ -9,7 +9,7 @@ import scipy.interpolate
 import pandas as pd
 
 TARGET_LEN = 200
-PATHH = 'train3'
+PATHH = 'test1'
 
 def addBetween(inpList, x):
 	a = np.zeros(shape=(1,2))
@@ -20,6 +20,7 @@ def addBetween(inpList, x):
 	return toReturn
 
 for fileName in glob.glob("./" + PATHH + "/*.txt"):
+	print('processing: ' + fileName)
 	fileNameSplit = fileName.replace('\\', '/').split('/')
 	file = pd.read_csv(fileName, delim_whitespace = True, header = None)
 	arr = np.array(file.ix[:, :])
@@ -46,4 +47,4 @@ for fileName in glob.glob("./" + PATHH + "/*.txt"):
 	ff = open('./' + PATHH + '_resampled_' + str(TARGET_LEN) + '/' + fileNameSplit[-1], 'a')
 	for x in arr:
 		ff.write("%e" % x[0] + " %e" % x[1] + '\n')
-	print('done: ' + fileName)
+	
