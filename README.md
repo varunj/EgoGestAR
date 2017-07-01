@@ -8,7 +8,7 @@ DTW for Gesture Recognition. Includes gesture generator.
 
 ## 2make_grnd_gesture.py
 1. Run to generate ground truth for custom gestures and corresponding time taken to draw each gesture.
-2. Gestures saved in gesture_out.txt separated by '-----------'.
+2. Gestures saved in gesture_out.txt separated by '----------'.
 
 ## 3display_files.py
 1. Reads from the specified folder.
