@@ -54,7 +54,7 @@ data = shuffle_data(data, seq)
 target = shuffle_data(target, seq)
 
 model = Sequential()  
-model.add(LSTM(200, input_shape=(2,200), return_sequences=True))
+model.add(LSTM(1024, input_shape=(2,200), return_sequences=True))
 model.add(Flatten())
 model.add(Dense(NOS_CLASSES, activation='softmax'))
 
