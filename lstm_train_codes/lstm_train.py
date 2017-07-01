@@ -1,3 +1,5 @@
+import matplotlib as mpl
+mpl.use('Agg')
 import numpy as np
 np.random.seed(123)
 import glob, os
@@ -54,12 +56,12 @@ data = shuffle_data(data, seq)
 target = shuffle_data(target, seq)
 
 model = Sequential()  
-model.add(LSTM(1024, input_shape=(2,200), return_sequences=True))
+model.add(LSTM(200, input_shape=(2,200), return_sequences=True))
 model.add(Flatten())
 model.add(Dense(NOS_CLASSES, activation='softmax'))
 
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-history = model.fit(data, target, epochs=300, batch_size=10, verbose=2, validation_split=0.30)
+history = model.fit(data, target, epochs=600, batch_size=10, verbose=2, validation_split=0.30)
 
 model.save('my_model.h5')
 model.save_weights('my_model_weights.h5')

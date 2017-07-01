@@ -1,3 +1,5 @@
+import matplotlib as mpl
+mpl.use('Agg')
 import numpy as np
 np.random.seed(123)
 import glob, os
@@ -22,12 +24,12 @@ from sklearn.metrics import confusion_matrix
 CLASSES = ('up','down','left','right','star','del','square','carret','tick','circlecc')
 NOS_CLASSES = len(CLASSES)
 
-model = load_model('my_model6.h5')
-model.load_weights('my_model_weights6.h5')
+model = load_model('my_model10.h5')
+model.load_weights('my_model_weights10.h5')
 
 dataSeq = []
 targetSeq = []
-for fileName in glob.glob("../test1_resampled_200/*.txt"):
+for fileName in glob.glob("../test_resampled_200/*.txt"):
 	file = pd.read_csv(fileName, delim_whitespace=True, header=None)
 	fname = fileName.split('_')[-2]
 	arr = np.array(file.ix[:, :])
