@@ -31,7 +31,7 @@ def shuffle_data(labels, seq):
 
 dataSeq = []
 targetSeq = []
-for fileName in glob.glob("../zcomb/*.txt"):
+for fileName in glob.glob("../train_resampled_200/*.txt"):
 	file = pd.read_csv(fileName, delim_whitespace=True, header=None)
 	fname = fileName.split('_')[-2]
 	arr = np.array(file.ix[:, :])
@@ -53,30 +53,27 @@ np.random.shuffle(seq)
 data = shuffle_data(data, seq)
 target = shuffle_data(target, seq)
 
-# pdb.set_trace()
-
 model = Sequential()  
 model.add(LSTM(200, input_shape=(2,200), return_sequences=True))
 model.add(Flatten())
 model.add(Dense(NOS_CLASSES, activation='softmax'))
 
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-history = model.fit(data, target, epochs=300, batch_size=10, verbose=2, validation_split=0.10)
+history = model.fit(data, target, epochs=300, batch_size=10, verbose=2, validation_split=0.30)
 
 model.save('my_model.h5')
 model.save_weights('my_model_weights.h5')
 
 plt.plot(history.history['acc'])
 plt.plot(history.history['val_acc'])
-plt.title('model accuracy')
 plt.ylabel('accuracy')
 plt.xlabel('epoch')
-plt.legend(['train', 'test'], loc='upper left')
+plt.legend(['train', 'test'])
 plt.savefig('accuracy.png')
+plt.close()
 plt.plot(history.history['loss'])
 plt.plot(history.history['val_loss'])
-plt.title('model loss')
 plt.ylabel('loss')
 plt.xlabel('epoch')
-plt.legend(['train', 'test'], loc='upper left')
+plt.legend(['train', 'test'])
 plt.savefig('loss.png')
