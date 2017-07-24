@@ -24,8 +24,8 @@ from sklearn.metrics import confusion_matrix
 CLASSES = ('up','down','left','right','star','del','square','carret','tick','circlecc')
 NOS_CLASSES = len(CLASSES)
 
-model = load_model('my_model10.h5')
-model.load_weights('my_model_weights10.h5')
+model = load_model('my_model6.h5')
+model.load_weights('my_model_weights6.h5')
 
 dataSeq = []
 targetSeq = []

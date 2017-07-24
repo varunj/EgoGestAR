@@ -1,4 +1,4 @@
-# processes folder trainx to generate trainx_resampled_200
+	# processes folder trainx to generate trainx_resampled_200
 # works only if reduction is by a factor of atmost 2
 import glob
 import matplotlib.pyplot as plt
@@ -9,7 +9,7 @@ import scipy.interpolate
 import pandas as pd
 
 TARGET_LEN = 200
-PATHH = 'test1'
+PATHH = 'perfect'
 
 def addBetween(inpList, x):
 	a = np.zeros(shape=(1,2))
