@@ -2,8 +2,6 @@ import glob, os
 import pandas as pd
 import numpy as np
 from scipy.spatial.distance import euclidean
-from fastdtw import fastdtw
-import matplotlib.pyplot as plt
 from dtw import dtw
 from math import sqrt
 from pprint import pprint
@@ -47,4 +45,4 @@ for seed_name, arr_seed in dic_seedFiles.items():
 	dic_toDump[seed_name] = dic_ans
 	print(c)
 
-pickle.dump(dic_toDump, open( "./dic_dtw_results.pickle", "wb" ) )
+pickle.dump(dic_toDump, open( "./dic_dtw_results.pickle", "wb" ), protocol=2)

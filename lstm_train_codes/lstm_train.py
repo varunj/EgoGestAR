@@ -45,7 +45,7 @@ for fileName in glob.glob("../train_resampled_200/*.txt"):
 	arrstack = arr1.reshape(1,2,200)
 	dataSeq.append(arrstack) 
 	targetSeq.append(targetarr)
-	print(fname, fileName)
+	# print(fname, fileName)
 
 print(len(dataSeq))
 data = np.vstack(dataSeq)
@@ -54,6 +54,7 @@ seq = np.arange(len(dataSeq))
 np.random.shuffle(seq)
 data = shuffle_data(data, seq)
 target = shuffle_data(target, seq)
+print(data.shape, target.shape)
 
 model = Sequential()  
 model.add(LSTM(200, input_shape=(2,200), return_sequences=True))
@@ -61,7 +62,7 @@ model.add(Flatten())
 model.add(Dense(NOS_CLASSES, activation='softmax'))
 
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-history = model.fit(data, target, epochs=600, batch_size=10, verbose=2, validation_split=0.30)
+history = model.fit(data, target, epochs=300, batch_size=10, verbose=2, validation_split=0.30)
 
 model.save('my_model.h5')
 model.save_weights('my_model_weights.h5')
