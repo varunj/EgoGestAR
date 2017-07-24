@@ -28,8 +28,9 @@ print(f1_score(y_true, y_pred, average='weighted'))
  [ 1  0  2 11  2  0  0 34  0  0]
  [ 0  3  0 40  0  0  0  0  5  2]
  [ 0  0  0  0  0  0  0  0  3 47]]
-0.75
-0.763905787641
-0.75
-0.737877229319
+accuracy_score=0.75
+precision_score=0.763905787641
+recall_score=0.75
+f1_score=0.737877229319
+time=2384.79674/500
 '''
