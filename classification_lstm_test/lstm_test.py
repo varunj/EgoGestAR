@@ -20,25 +20,27 @@ import time
 import scipy as sp
 import scipy.interpolate
 from sklearn.metrics import confusion_matrix
+import pdb
 
-CLASSES = ('up','down','left','right','star','del','square','carret','tick','circlecc')
-NOS_CLASSES = len(CLASSES)
+CLASSES1 = ('up','down','left','right','star','del','square','carret','tick','circlecc')
+NOS_CLASSES1 = len(CLASSES1)
 
-model = load_model('my_model6.h5')
-model.load_weights('my_model_weights6.h5')
-
+model = load_model('100falseMy_model.hdf5')
+#model.load_weights('my_model_weights6.h5')
+print(model.summary())
+pdb.set_trace()
 dataSeq = []
 targetSeq = []
 for fileName in glob.glob("../test_resampled_200/*.txt"):
 	file = pd.read_csv(fileName, delim_whitespace=True, header=None)
 	fname = fileName.split('_')[-2]
 	arr = np.array(file.ix[:, :])
-	arr1 = np.transpose(arr)
-	targetarr = np.zeros(NOS_CLASSES)
-	for i in range(0, NOS_CLASSES):
-		if (CLASSES[i]==fname):
+	#arr1 = np.transpose(arr)
+	targetarr = np.zeros(NOS_CLASSES1)
+	for i in range(0, NOS_CLASSES1):
+		if (CLASSES1[i]==fname):
 			targetarr[i] = 1
-	arrstack = arr1.reshape(1,2,200)
+	arrstack = arr.reshape(1,200,2)
 	dataSeq.append(arrstack) 
 	targetSeq.append(targetarr)
 
@@ -52,18 +54,18 @@ predArr = []
 trueArr = []
 startTime = time.clock()
 for eachData in data:
-	eachData = eachData.reshape(1, 2, 200)
+	eachData = eachData.reshape(1, 200, 2)
 	result = model.predict(eachData)
-
+	#pdb.set_trace()
 	predArr.append(np.argmax(result[0]))
 	trueArr.append(np.argmax(target[c]))
 	if (np.argmax(target[c]) == np.argmax(result[0])):
 		truePositive = truePositive+1
 
-	# print('t: ' + CLASSES[np.argmax(target[c])] + ' p: ' + CLASSES[np.argmax(result[0])] + ' with prob: ' + str(max(result[0])))
+	#print('t: ' + CLASSES1[np.argmax(target[c])] + ' p: ' + CLASSES1[np.argmax(result[0])] + ' with prob: ' + str(max(result[0])))
 	c = c+1
 
-print(CLASSES)
+print(CLASSES1)
 print(confusion_matrix(trueArr, predArr))
 print('acc: ' + str(truePositive) + '/500')
 
