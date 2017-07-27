@@ -1,4 +1,4 @@
-	# processes folder trainx to generate trainx_resampled_200
+# processes folder trainx to generate trainx_resampled_200
 # works only if reduction is by a factor of atmost 2
 import glob
 import matplotlib.pyplot as plt
