@@ -1,0 +1,647 @@
+Varun 150
+FasterRCNN: threshold 99
+LSTM:		threshold 75
+
+left:	
+right:	11 (tick), 1, 9, 12, 13, 15
+down:	7 (left)
+up:		-
+carret:	-	
+tick:	9 (down)
+del:	2 (sq), 3 (sq), 5 (sq), 7 (sq), 9 (down), 14 (sq), 15 (sq), 4, 8, 13 
+circle:	3 (sq), 9 (sq), 10 (sq), 11 (sq), 12 (sq), 14 (sq), 15 (sq), 1, 5, 13
+square:	-	
+star:	2 (right), 6 (right), 8 (square), 9 (down), 1, 7, 10, 13, 14
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_carret_1.mp4
+actual: carret p: carret
+('Detection took', 11.775712013244629)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_1.mp4
+testvideo_circlecc_1.mp4
+unclassified
+('Detection took', 18.14469003677368)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_1.mp4
+testvideo_right_1.mp4
+unclassified
+('Detection took', 13.929785013198853)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_square_1.mp4
+actual: square p: square
+('Detection took', 27.167500972747803)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_tick_1.mp4
+actual: tick p: tick
+('Detection took', 13.081997871398926)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_1.mp4
+actual: del p: del
+('Detection took', 19.426536083221436)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_1.mp4
+testvideo_star_1.mp4
+unclassified
+('Detection took', 32.65896391868591)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_up_1.mp4
+actual: up p: testvideo_up_1
+('Detection took', 15.118376970291138)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_left_1.mp4
+actual: left p: left
+('Detection took', 14.806400060653687)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_down_1.mp4
+actual: down p: down
+('Detection took', 14.106975078582764)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_2.mp4
+actual: right p: right
+('Detection took', 4.588105201721191)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_tick_2.mp4
+actual: tick p: tick
+('Detection took', 4.600784063339233)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_2.mp4
+actual: del p: square
+('Detection took', 6.736189842224121)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_square_2.mp4
+actual: square p: square
+('Detection took', 10.031445026397705)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_down_2.mp4
+actual: down p: down
+('Detection took', 4.473829030990601)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_carret_2.mp4
+actual: carret p: carret
+('Detection took', 5.372814893722534)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_up_2.mp4
+actual: up p: up
+('Detection took', 4.8889548778533936)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_2.mp4
+actual: star p: right
+('Detection took', 10.451102018356323)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_2.mp4
+actual: circlecc p: circlecc
+('Detection took', 7.0479888916015625)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_left_2.mp4
+actual: left p: left
+('Detection took', 4.380580902099609)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_carret_3.mp4
+actual: carret p: carret
+('Detection took', 14.159358978271484)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_3.mp4
+actual: star p: star
+('Detection took', 27.920737981796265)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_up_3.mp4
+actual: up p: up
+('Detection took', 15.481655836105347)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_square_3.mp4
+actual: square p: square
+('Detection took', 25.447052001953125)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_3.mp4
+actual: right p: right
+('Detection took', 16.019338846206665)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_left_3.mp4
+actual: left p: left
+('Detection took', 14.312405109405518)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_tick_3.mp4
+actual: tick p: tick
+('Detection took', 16.015012979507446)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_down_3.mp4
+actual: down p: down
+('Detection took', 15.769068956375122)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_3.mp4
+actual: del p: square
+('Detection took', 19.693793058395386)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_3.mp4
+actual: circlecc p: square
+('Detection took', 20.33161497116089)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_up_4.mp4
+actual: up p: up
+('Detection took', 13.965559005737305)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_tick_4.mp4
+actual: tick p: tick
+('Detection took', 10.868726015090942)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_4.mp4
+testvideo_del_4.mp4
+unclassified
+('Detection took', 19.331682920455933)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_down_4.mp4
+actual: down p: down
+('Detection took', 13.333072900772095)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_left_4.mp4
+actual: left p: left
+('Detection took', 14.61322808265686)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_4.mp4
+actual: right p: right
+('Detection took', 11.901481866836548)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_square_4.mp4
+actual: square p: square
+('Detection took', 24.800467014312744)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_4.mp4
+actual: star p: star
+('Detection took', 26.445842027664185)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_4.mp4
+actual: circlecc p: circlecc
+('Detection took', 16.38570284843445)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_carret_4.mp4
+actual: carret p: carret
+('Detection took', 11.457080841064453)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_square_5.mp4
+actual: square p: square
+('Detection took', 22.933211088180542)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_carret_5.mp4
+actual: carret p: carret
+('Detection took', 14.082880020141602)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_down_5.mp4
+actual: down p: down
+('Detection took', 14.134008884429932)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_up_5.mp4
+actual: up p: up
+('Detection took', 12.232818841934204)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_5.mp4
+actual: del p: square
+('Detection took', 20.216233015060425)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_5.mp4
+actual: star p: star
+('Detection took', 30.599087953567505)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_left_5.mp4
+actual: left p: left
+('Detection took', 15.037588119506836)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_tick_5.mp4
+actual: tick p: tick
+('Detection took', 13.38596796989441)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_5.mp4
+actual: right p: right
+('Detection took', 12.35305404663086)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_5.mp4
+testvideo_circlecc_5.mp4
+unclassified
+('Detection took', 19.34405493736267)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_6.mp4
+actual: star p: right
+('Detection took', 11.73334288597107)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_tick_6.mp4
+actual: tick p: tick
+('Detection took', 5.524159908294678)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_6.mp4
+actual: del p: del
+('Detection took', 8.057101011276245)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_carret_6.mp4
+actual: carret p: carret
+('Detection took', 5.752434968948364)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_down_6.mp4
+actual: down p: down
+('Detection took', 5.364672899246216)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_6.mp4
+actual: right p: right
+('Detection took', 4.2443249225616455)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_up_6.mp4
+actual: up p: up
+('Detection took', 5.497381925582886)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_square_6.mp4
+actual: square p: square
+('Detection took', 9.959353923797607)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_left_6.mp4
+actual: left p: left
+('Detection took', 4.67822003364563)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_6.mp4
+actual: circlecc p: circlecc
+('Detection took', 7.76953911781311)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_square_7.mp4
+actual: square p: square
+('Detection took', 18.016021013259888)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_tick_7.mp4
+actual: tick p: tick
+('Detection took', 11.483460187911987)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_left_7.mp4
+actual: left p: left
+('Detection took', 11.106619119644165)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_7.mp4
+actual: right p: right
+('Detection took', 10.814708948135376)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_7.mp4
+testvideo_star_7.mp4
+unclassified
+('Detection took', 24.25351619720459)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_7.mp4
+actual: del p: square
+('Detection took', 18.273040056228638)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_carret_7.mp4
+actual: carret p: carret
+('Detection took', 10.315966844558716)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_down_7.mp4
+actual: down p: left
+('Detection took', 10.308645963668823)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_up_7.mp4
+actual: up p: up
+('Detection took', 10.337203979492188)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_7.mp4
+actual: circlecc p: circlecc
+('Detection took', 15.606475114822388)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_tick_8.mp4
+actual: tick p: tick
+('Detection took', 7.579491853713989)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_8.mp4
+actual: circlecc p: circlecc
+('Detection took', 9.86761999130249)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_left_8.mp4
+actual: left p: left
+('Detection took', 10.26382303237915)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_8.mp4
+actual: star p: square
+('Detection took', 15.866207122802734)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_carret_8.mp4
+actual: carret p: carret
+('Detection took', 7.619397163391113)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_8.mp4
+testvideo_del_8.mp4
+unclassified
+('Detection took', 10.909312009811401)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_square_8.mp4
+actual: square p: square
+('Detection took', 14.895900964736938)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_down_8.mp4
+actual: down p: down
+('Detection took', 7.665040969848633)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_up_8.mp4
+actual: up p: up
+('Detection took', 7.327415943145752)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_8.mp4
+actual: right p: right
+('Detection took', 7.841110944747925)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_tick_9.mp4
+actual: tick p: down
+('Detection took', 9.349923849105835)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_9.mp4
+actual: star p: down
+('Detection took', 20.535083055496216)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_carret_9.mp4
+actual: carret p: carret
+('Detection took', 10.27785587310791)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_left_9.mp4
+actual: left p: left
+('Detection took', 10.165175914764404)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_down_9.mp4
+actual: down p: down
+('Detection took', 10.225596189498901)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_9.mp4
+actual: del p: down
+('Detection took', 15.006422996520996)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_9.mp4
+actual: circlecc p: square
+('Detection took', 16.711912870407104)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_9.mp4
+testvideo_right_9.mp4
+unclassified
+('Detection took', 9.505999088287354)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_square_9.mp4
+actual: square p: square
+('Detection took', 16.651031970977783)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_up_9.mp4
+actual: up p: up
+('Detection took', 10.07430911064148)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_square_10.mp4
+actual: square p: square
+('Detection took', 14.990195035934448)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_tick_10.mp4
+actual: tick p: tick
+('Detection took', 7.8916308879852295)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_down_10.mp4
+actual: down p: down
+('Detection took', 8.855889081954956)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_10.mp4
+testvideo_star_10.mp4
+unclassified
+('Detection took', 22.088419914245605)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_left_10.mp4
+actual: left p: left
+('Detection took', 7.801585912704468)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_carret_10.mp4
+actual: carret p: carret
+('Detection took', 7.130036115646362)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_up_10.mp4
+actual: up p: up
+('Detection took', 6.82320499420166)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_10.mp4
+actual: circlecc p: square
+('Detection took', 12.633244037628174)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_10.mp4
+actual: del p: del
+('Detection took', 12.869266033172607)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_10.mp4
+actual: right p: right
+('Detection took', 6.811823129653931)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_11.mp4
+actual: del p: del
+('Detection took', 14.457792043685913)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_left_11.mp4
+actual: left p: left
+('Detection took', 9.81368899345398)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_tick_11.mp4
+actual: tick p: tick
+('Detection took', 9.525410890579224)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_down_11.mp4
+actual: down p: down
+('Detection took', 6.241828918457031)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_11.mp4
+actual: star p: star
+('Detection took', 18.40519690513611)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_square_11.mp4
+actual: square p: square
+('Detection took', 17.119496822357178)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_11.mp4
+actual: right p: tick
+('Detection took', 11.437775135040283)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_up_11.mp4
+actual: up p: up
+('Detection took', 7.287144899368286)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_11.mp4
+actual: circlecc p: square
+('Detection took', 11.763789176940918)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_carret_11.mp4
+actual: carret p: carret
+('Detection took', 10.49363398551941)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_12.mp4
+actual: star p: star
+('Detection took', 18.08265209197998)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_tick_12.mp4
+actual: tick p: tick
+('Detection took', 8.297566890716553)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_12.mp4
+actual: circlecc p: square
+('Detection took', 11.864558935165405)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_square_12.mp4
+actual: square p: square
+('Detection took', 16.631641149520874)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_carret_12.mp4
+actual: carret p: carret
+('Detection took', 8.858597993850708)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_left_12.mp4
+actual: left p: left
+('Detection took', 7.7756359577178955)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_up_12.mp4
+actual: up p: up
+('Detection took', 6.533958911895752)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_12.mp4
+testvideo_right_12.mp4
+unclassified
+('Detection took', 7.33541202545166)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_down_12.mp4
+actual: down p: down
+('Detection took', 6.799378871917725)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_12.mp4
+actual: del p: del
+('Detection took', 13.00306487083435)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_13.mp4
+testvideo_circlecc_13.mp4
+unclassified
+('Detection took', 12.45150899887085)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_13.mp4
+testvideo_star_13.mp4
+unclassified
+('Detection took', 21.407858848571777)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_tick_13.mp4
+actual: tick p: tick
+('Detection took', 7.612009048461914)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_left_13.mp4
+actual: left p: left
+('Detection took', 7.552608966827393)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_13.mp4
+testvideo_right_13.mp4
+unclassified
+('Detection took', 5.09529185295105)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_up_13.mp4
+actual: up p: up
+('Detection took', 6.356210947036743)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_square_13.mp4
+actual: square p: square
+('Detection took', 14.480159044265747)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_down_13.mp4
+actual: down p: down
+('Detection took', 6.679779052734375)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_13.mp4
+testvideo_del_13.mp4
+unclassified
+('Detection took', 11.459255933761597)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_carret_13.mp4
+actual: carret p: carret
+('Detection took', 7.756133079528809)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_up_14.mp4
+actual: up p: up
+('Detection took', 5.703506946563721)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_14.mp4
+actual: del p: square
+('Detection took', 10.602792024612427)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_square_14.mp4
+actual: square p: square
+('Detection took', 13.54854702949524)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_14.mp4
+actual: right p: right
+('Detection took', 7.755069017410278)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_14.mp4
+testvideo_star_14.mp4
+unclassified
+('Detection took', 16.096611976623535)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_carret_14.mp4
+actual: carret p: carret
+('Detection took', 7.5140769481658936)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_14.mp4
+actual: circlecc p: square
+('Detection took', 10.15344500541687)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_down_14.mp4
+actual: down p: down
+('Detection took', 5.997833013534546)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_left_14.mp4
+actual: left p: left
+('Detection took', 6.968554973602295)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_tick_14.mp4
+actual: tick p: tick
+('Detection took', 6.5534138679504395)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_15.mp4
+actual: circlecc p: square
+('Detection took', 10.907567024230957)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_15.mp4
+testvideo_right_15.mp4
+unclassified
+('Detection took', 5.687050104141235)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_down_15.mp4
+actual: down p: down
+('Detection took', 4.72831392288208)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_carret_15.mp4
+actual: carret p: carret
+('Detection took', 7.046811103820801)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_up_15.mp4
+actual: up p: up
+('Detection took', 5.000671148300171)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_square_15.mp4
+actual: square p: square
+('Detection took', 12.019166946411133)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_15.mp4
+actual: star p: star
+('Detection took', 17.41594696044922)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_tick_15.mp4
+actual: tick p: tick
+('Detection took', 6.235408067703247)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_15.mp4
+actual: del p: square
+('Detection took', 11.177391052246094)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_left_15.mp4
+actual: left p: left
+('Detection took', 6.883997917175293)
+> /home/ramakrishna/Documents/DeepLearning/py-faster-rcnn/tools/FinalDemoConnected.py(427)<module>()
+-> cnf_matrix = confusion_matrix(trueArr, predArr)
+(Pdb) c
+Confusion matrix, without normalization
+[[15  0  0  0  0  0  0  0  0  0  0]
+ [ 0 14  1  0  0  0  0  0  0  0  0]
+ [ 0  0 15  0  0  0  0  0  0  0  0]
+ [ 0  0  0  9  0  0  0  0  1  0  5]
+ [ 0  1  0  2  6  0  1  0  0  0  5]
+ [ 0  1  0  0  0  5  6  0  0  0  3]
+ [ 0  0  0  0  0  0 15  0  0  0  0]
+ [ 0  0  0  0  0  0  0 15  0  0  0]
+ [ 0  1  0  0  0  0  0  0 14  0  0]
+ [ 0  0  0  0  0  0  7  0  0  5  3]
+ [ 0  0  0  0  0  0  0  0  0  0  0]]
+

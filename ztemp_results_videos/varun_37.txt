@@ -1,0 +1,178 @@
+Varun 37
+FasterRCNN: threshold 90
+LSTM:		threshold 75
+
+left:	
+right:	11 (tick), 1, 9, 12, 13, 15
+down:	7 (left)
+up:		-
+carret:	-	
+tick:	-
+del:	3 (sq), 4 (sqaure), 5 (sq), 7 (sq), 9 (sq), 14 (sq), 15 (sq), 2, 8, 13 
+circle:	3 (sq), 11 (sq), 12 (sq), 14 (sq), 15 (sq), 5, 10, 13
+square:	-	
+star:	2 (right), 6 (right), 8 (square), 7, 10, 13, 14
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_1.mp4
+actual: circlecc p: circlecc
+('Detection took', 11.123308897018433)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_1.mp4
+testvideo_right_1.mp4
+unclassified
+('Detection took', 8.014259099960327)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_1.mp4
+actual: star p: star
+('Detection took', 17.55383014678955)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_2.mp4
+testvideo_del_2.mp4
+unclassified
+('Detection took', 3.7027230262756348)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_2.mp4
+actual: star p: right
+('Detection took', 6.25825309753418)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_3.mp4
+actual: del p: square
+('Detection took', 13.277246952056885)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_3.mp4
+actual: circlecc p: square
+('Detection took', 13.353189945220947)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_4.mp4
+actual: del p: square
+('Detection took', 12.735525846481323)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_5.mp4
+actual: del p: square
+('Detection took', 13.681282043457031)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_5.mp4
+testvideo_circlecc_5.mp4
+unclassified
+('Detection took', 12.962425947189331)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_6.mp4
+actual: star p: right
+('Detection took', 7.803818941116333)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_7.mp4
+testvideo_star_7.mp4
+unclassified
+('Detection took', 16.129442930221558)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_7.mp4
+actual: del p: square
+('Detection took', 11.621639966964722)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_down_7.mp4
+actual: down p: left
+('Detection took', 6.586893796920776)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_8.mp4
+actual: star p: square
+('Detection took', 10.69898796081543)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_8.mp4
+testvideo_del_8.mp4
+unclassified
+('Detection took', 7.026423931121826)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_tick_9.mp4
+actual: tick p: tick
+('Detection took', 5.884984970092773)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_9.mp4
+actual: star p: star
+('Detection took', 12.643177032470703)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_9.mp4
+actual: del p: square
+('Detection took', 9.592797994613647)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_9.mp4
+actual: circlecc p: circlecc
+('Detection took', 11.074230909347534)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_9.mp4
+actual: right p: right
+('Detection took', 6.1556830406188965)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_10.mp4
+testvideo_star_10.mp4
+unclassified
+('Detection took', 14.266870021820068)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_10.mp4
+testvideo_circlecc_10.mp4
+unclassified
+('Detection took', 8.263972043991089)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_11.mp4
+actual: right p: tick
+('Detection took', 7.60507607460022)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_11.mp4
+actual: circlecc p: square
+('Detection took', 7.737492084503174)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_12.mp4
+actual: circlecc p: square
+('Detection took', 8.081138134002686)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_12.mp4
+testvideo_right_12.mp4
+unclassified
+('Detection took', 5.022741079330444)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_13.mp4
+testvideo_circlecc_13.mp4
+unclassified
+('Detection took', 8.49530291557312)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_13.mp4
+testvideo_star_13.mp4
+unclassified
+('Detection took', 13.70750904083252)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_13.mp4
+testvideo_right_13.mp4
+unclassified
+('Detection took', 3.2299699783325195)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_13.mp4
+testvideo_del_13.mp4
+unclassified
+('Detection took', 7.520107984542847)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_14.mp4
+actual: del p: square
+('Detection took', 6.962224960327148)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_star_14.mp4
+testvideo_star_14.mp4
+unclassified
+('Detection took', 10.728874921798706)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_14.mp4
+actual: circlecc p: square
+('Detection took', 6.681601047515869)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_circlecc_15.mp4
+actual: circlecc p: square
+('Detection took', 7.09229302406311)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_right_15.mp4
+testvideo_right_15.mp4
+unclassified
+('Detection took', 3.7020809650421143)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/testvideo_del_15.mp4
+actual: del p: square
+('Detection took', 7.566206932067871)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
