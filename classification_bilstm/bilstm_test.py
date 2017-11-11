@@ -21,6 +21,7 @@ import scipy as sp
 import scipy.interpolate
 # from sklearn.metrics import confusion_matrix
 import pdb
+from shutil import copyfile
 
 CLASSES1 = ('up','down','left','right','star','del','square','carret','tick','circlecc')
 NOS_CLASSES1 = len(CLASSES1)
@@ -34,9 +35,11 @@ print(model.summary())
 # pdb.set_trace()
 dataSeq = []
 targetSeq = []
+filenameArr = []
 for fileName in glob.glob("../test_resampled_200/*.txt"):
 	file = pd.read_csv(fileName, delim_whitespace=True, header=None)
 	fname = fileName.split('_')[-2]
+	filenameArr.append(fileName)
 	arr = np.array(file.ix[:, :])
 	#arr1 = np.transpose(arr)
 	targetarr = np.zeros(NOS_CLASSES1)
@@ -65,7 +68,7 @@ for eachData in data:
 	if (np.argmax(target[c]) == np.argmax(result[0])):
 		truePositive = truePositive+1
 
-	#print('t: ' + CLASSES1[np.argmax(target[c])] + ' p: ' + CLASSES1[np.argmax(result[0])] + ' with prob: ' + str(max(result[0])))
+	# print('t: ' + CLASSES1[np.argmax(target[c])] + ' p: ' + CLASSES1[np.argmax(result[0])] + ' with prob: ' + str(max(result[0])))
 	c = c+1
 
 print(CLASSES1)
@@ -73,3 +76,12 @@ print(CLASSES1)
 print('acc: ' + str(truePositive) + '/500')
 
 print('time taken: ' + str(time.clock() - startTime))
+
+
+# copy source files of misclassified gestures
+c = 0
+for x in range(0, len(predArr)):
+	c = c + 1
+	if (CLASSES1[predArr[x]] != CLASSES1[np.argmax(target[x])]):
+		copyfile(filenameArr[x], './misclassified/' + str(c) + '_' + CLASSES1[predArr[x]] + '.txt')
+		print(CLASSES1[predArr[x]], filenameArr[x])

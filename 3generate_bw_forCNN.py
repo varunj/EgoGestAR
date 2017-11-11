@@ -19,7 +19,7 @@ for grnd_name, arr_grnd in dic_grndFiles.items():
 	for i in range(0, len(arr_grnd), int(len(arr_grnd)/8)):
 		plt.subplot(3,3,n)
 		n = n+1
-		plt.plot([x[0] for x in arr_grnd, [-y[1] for y in arr_grnd)
+		plt.plot([x[0] for x in arr_grnd], [-y[1] for y in arr_grnd])
 		plt.xlim([0,640])
 		plt.ylim([-480,0])
 		plt.xticks([0,640])
