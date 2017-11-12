@@ -28,7 +28,7 @@ NOS_CLASSES1 = len(CLASSES1)
 
 # model = load_model('20avMy_model.hdf5')
 # model = load_model('20concatMy_model.hdf5')
-model = load_model('20mulMy_model.hdf5')
+model = load_model('40testdrop2My_model.hdf5')
 # model = load_model('20sumMy_model.hdf5')
 
 print(model.summary())
