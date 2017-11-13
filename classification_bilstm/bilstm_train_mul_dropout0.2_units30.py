@@ -21,7 +21,7 @@ from keras.callbacks import ModelCheckpoint, Callback
 from keras.utils.vis_utils import model_to_dot
 
 
-name="30testdrop2"
+name="30testdrop2test"
 CLASSES = ('up','down','left','right','star','del','square','carret','tick','circlecc')
 NOS_CLASSES = len(CLASSES)
 
