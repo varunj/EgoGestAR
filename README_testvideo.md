@@ -1,18 +1,18 @@
 # **PointGestAR** *(point-gesture)*
-Egocentric pointing gesture videos used for testing of [PointGestAR: A Pointing Hand Gestural Framework for Augmented Reality User Interfaces ](https://pointgestar.github.io/ "PointGestAR: A Pointing Hand Gestural Framework for Augmented Reality User Interfaces ")
+Egocentric pointing gesture videos used for testing of [DrawInAir: A Lightweight Gestural Interface Based on Fingertip Regression ](https://ilab-ar.github.io/DrawInAir/ "DrawInAir: A Lightweight Gestural Interface Based on Fingertip Regression ")
 
 # Links
 Codebase: *will come soon*
 
-Public EgoGestAR Dataset: https://github.com/pointgestar/EgoGestAR
+Public EgoGestAR Dataset: https://github.com/varunj/EgoGestAR
 
-Public Testing Dataset: https://github.com/pointgestar/PointGestAR
+Public Testing Dataset: https://github.com/varunj/EgoGestAR/tree/master/testvideo
 
-Project Website: https://PointGestAR.github.io/
+Project Website: https://ilab-ar.github.io/DrawInAir/
 
 
 # The Gestures
-Refer [Our Dataset](https://github.com/pointgestar/EgoGestAR)
+Refer [Our Dataset](https://github.com/varunj/EgoGestAR)
   
 # Usage
 
