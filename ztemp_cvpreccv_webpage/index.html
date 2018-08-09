@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>PointGestAR</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#a90329">
+	<link rel="stylesheet" type="text/css" href="pointgestar_stylesheets/normalize.css" media="screen">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="pointgestar_stylesheets/stylesheet.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="pointgestar_stylesheets/github-light.css" media="screen">
+	<link rel="shortcut icon" href="pointgestar_img/favicon.ico" />
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-101653083-3', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+
+<body>
+	<section class="page-header">
+		<h1 class="project-name">PointGestAR</h1> <i> (point-gesture) </i>
+		<h2 class="project-tagline">A Pointing Hand Gestural Framework for Augmented Reality User Interfaces</h2>
+		<h2 class="project-authors"></h2>
+		<a href="#video1" class="btn">Demo Video 1</a>
+		<a href="#video2" class="btn">Demo Video 2</a>
+		<a href="https://github.com/pointgestar/EgoGestAR" target="_blank" class="btn">EgoGestAR Dataset</a>
+		<a href="https://github.com/pointgestar/PointGestAR" target="_blank" class="btn">Videos Dataset for Testing</a>
+	</section>
+
+	<section class="main-content">
+		<h3><a id="welcome-to-pointgestar" class="anchor" href="#welcome-to-pointgestar" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to PointGestAR</h3>
+		<p align="justify"> Hand gestures are a natural way of interaction on Head Mounted Devices (HMDs). Recent HMDs such as <a href="https://www.microsoft.com/en-us/hololens" target="_blank" >Hololens 1</a> and <a href="http://www.metavision.com/" target="_blank" >Meta Glasses 2</a> are equipped with expensive and powerful processors and sensors such as multiple cameras, depth and IR sensors to process hand gestures. To overcome this, our proposed deep learning based gestural framework, termed as PointGestAR, takes only a monocular RGB input, works with frugal wearables such as the <a href="https://vr.google.com/cardboard/" target="_blank" >Google Cardboard 3</a>/ <a href="http://wearality.com/" target="_blank" >Wearality Sky</a> and a smartphone without built-in depth or IR sensors. </p>
+
+		
+
+		<p align="justify"> The major challenge in training egocentric gesture recognition models is in obtaining sufficient labeled data for end-to-end learning. To address this, we design a cascade of networks for real-time pointing hand gesture classification. </p>
+
+		<p align="justify"> The contributions of the paper are:
+		<ol>
+			<li> We highlight how a model, that is separately trained on large detection dataset in conjunction with a classifier trained on limited classification data, would perform better over end-to-end models owing to its modularity.
+			<li> EgoGestAR: We also propose a dataset of 10 egocentric pointing gestures designed for for Augmented Reality (AR) applications and extensively test our model to show that the framework works in real-time while achieving an accuracy of 91.66% on egocentric video dataset.
+		</ol></p>
+
+		<p align="center"><img src="https://pointgestar.github.io/pointgestar_img/figx_comparison.png"></p>
+
+
+		<h3><a id="the-idea" class="anchor" href="#the-idea" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Idea</h3>
+		<p align="justify"> The framework comprises of three stages, namely:
+		<ol>
+		<li> A hand candidate detector using the state-of-the-art Faster R-CNN.
+		<li> A regression architecture to accurately localize the fingertip that marks the gesture pattern in user field-of-view.
+		<li> Bidirectional Long-Short Term Memory (Bi-LSTM) network to classify fingertip motion pattern. </ol></p>
+
+
+		<p><img src="https://pointgestar.github.io/pointgestar_img/fig2_framework.png"></p>
+
+
+		<h3><a id="the-idea" class="anchor" href="#the-idea" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Proposed Dataset</h3>
+		<p align="justify"> In order to train and evaluate the proposed LSTM architecture for gesture classification, we created a dataset EgoGestAR: an egocentric pointing gesture dataset for AR wearables. The dataset includes 10 gesture patterns and is primarily divided into 3 categories as follows:
+		<ul>
+		<li> 4 swipe gestures (Up, Down, Left, and Right) for navigating/selecting user preferences in AR head mounts.
+		<li> 2 gestures (Rectangle and Circle) for RoI highlighting in user’s FoV for tele-support applications.
+		<li> 4 gestures (Checkmark: Yes, Caret: No, X: Delete, Star: Bookmark) for evidence capture in inspection, maintenance and repair applications. </ul>
+		</p>
+
+
+		<p><img src="https://pointgestar.github.io/pointgestar_img/fig4_perf.png"></p>
+
+		<!-- <h3><a id="authors" class="anchor" href="#authors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Authors</h3>
+		<div class="authors-wrapper">
+			<div class="authors-item">
+				<a href="https://www.linkedin.com//"" target="_blank"><div class="circle"><img src="" width="140" height="140"/></div></a>
+				<p></p>
+			</div>
+			<div class="authors-item">
+				<a href="https://www.linkedin.com//" target="_blank"><div class="circle"><img src="" width="140" height="140"/></div></a>
+				<p></p>
+			</div>
+			<div class="authors-item">
+				<a href="https://www.linkedin.com//" target="_blank"><div class="circle"><img src="" width="140" height="140"/></div></a>
+				<p></p>
+			</div>
+		</div> -->
+
+		<!-- <h3><a id="video1" class="anchor" href="#video1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo Video: 1</h3>
+		<video src="https://pointgestar.github.io/pointgestar_img/demo_video_0_watermark.mp4" align='center' width="100%" height="100%" controls preload></video>
+		
+		<h3><a id="video2" class="anchor" href="#video2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo Video: 2</h3>
+		<video src="https://pointgestar.github.io/pointgestar_img/demo_video_1_watermark.mp4" align='center' width="100%" height="100%" controls preload></video> -->
+
+		<h3><a id="video1" class="anchor" href="#video1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo Video: 1</h3>
+		<div class="video-responsive">
+		<iframe width="800" height="450" src="https://www.youtube.com/embed/V2Kr1jtWoSU" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+		<h3><a id="video2" class="anchor" href="#video2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo Video: 2</h3>
+
+		<div class="video-responsive">
+		<iframe width="800" height="450" src="https://www.youtube.com/embed/5_3j15cMIto" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+	</section>
+
+</body>
+</html>
+

@@ -1,0 +1,8 @@
+make 2x faster
+	ffmpeg -i full.mp4 -filter:v "setpts=0.5*PTS" fast.mp4
+
+take first 1:10 mins
+	ffmpeg -i fast.mp4 -t 00:01:10 fast_cut.mp4
+
+watermark
+	ffmpeg -i "demo_video_0.avi"  -vf "drawtext=text='HandGestAR\: A Hand Gestural Framework for AR User Interfaces':x=0:y=H-th-10: fontfile=arial.ttf:fontsize=27:fontcolor=white" "demo_video_0_watermark.mp4"

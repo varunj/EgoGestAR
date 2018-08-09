@@ -1,35 +1,52 @@
-TCS_DTW_Gestures
-================================================
+# **EgoGestAR** *(ego-gesture)*
+An egocentric pointing gesture dataset. Developed for [DrawInAir: A Lightweight Gestural Interface Based on Fingertip Regression ](https://ilab-ar.github.io/DrawInAir/ "DrawInAir: A Lightweight Gestural Interface Based on Fingertip Regression ")
 
-DTW for Gesture Recognition. Includes gesture generator.
+# Links
+Codebase: *will come soon*
 
-## 1make_grnd_basic.py
-1. Run to generate ground truth files for left, right, up, down gestures.
+Public EgoGestAR Dataset: https://github.com/varunj/EgoGestAR
 
-## 2make_grnd_gesture.py
-1. Run to generate ground truth for custom gestures and corresponding time taken to draw each gesture.
-2. Gestures saved in gesture_out.txt separated by '----------'.
+Public Testing Dataset: https://github.com/varunj/EgoGestAR/tree/master/testvideo
 
-## 3display_files.py
-1. Reads from the specified folder.
-2. Generates a graphical representation of the gestures in 10 graphs (to interpret the gesture).
+Project Website: https://ilab-ar.github.io/DrawInAir/
 
-## 4generate_results.py
-1. Reads from /seeds and /grnd_sparse and output the result to stdout.
-2. Gives the absolute best match and costs corresponding to each ground truth gesture.
 
-## 5generate_results_realtime.py
-1. Accepts the input gesture during runtime.
-2. Outputs as above in <4generate_results>.
+# The Gestures
+- The left column shows standard input gesture sequences shown to the users before the data collection.
+- The right column depicts the variation in the data samples.
 
-## 6trainRawProcess.py
-1. Reads '-----------' separated gestures and stores as different files.
+These gestures could be applied to different use cases. 
+- The black block depicts swipe gestures (Left, Right, Up, Down) for list interaction.
+- Green block showing Rectangle and Circle gestures for Region of Interest (RoI) highlighting.
+- Red block (Checkmark: Yes, Caret: No, X: Delete, Star: Bookmark) gestures for evidence capture (in, say, industrial AR applications.)
 
-## 7histogram_gesturelen.py
-1. Outputs a histogram of the length of raw gestures captured.
 
-## 8resample_to_200.py
-1. Up/Down samples raw gestures to 200 length.
+*The highlighted point in each gesture indicates the starting position of the gesture.*
 
-## Note
-1. Requires Kivy (https://kivy.org/docs/installation/installation.html)
+![](https://github.com/varunj/EgoGestAR/blob/master/ztemp_cvpreccv_webpage/pointgestar_img/fig4_fig5.png)
+
+
+# Usage
+
+## test/
+- Lists 500 gesture inputs used for testing. 50 gestures per class.
+- File naming convention: test\_*gesturename*\_*serialnumber*.txt 
+
+## test_images/
+- Lists 500 gesture images corresponding to the inputs. Plotted in black and white with a circular dot representing the starting of the gesture. 
+- File naming convention: test\_*gesturename*\_*serialnumber*.png
+
+## test_time/
+- Lists the time taken (in seconds) to perform each test gesture.
+
+## train/
+- Lists 2000 gesture inputs used for training. 200 gestures per class.
+- File naming convention: train\_*gesturename*\_*serialnumber*.txt 
+
+## train_images/
+- Lists 2000 gesture images corresponding to the inputs. Plotted in black and white with a circular dot representing the starting of the gesture. 
+- File naming convention: train\_*gesturename*\_*serialnumber*.png 
+
+## train_time/
+- Lists the time taken (in seconds) to perform each training gesture.
+
