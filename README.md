@@ -2,9 +2,7 @@
 An egocentric pointing gesture dataset. Developed for [DrawInAir: A Lightweight Gestural Interface Based on Fingertip Regression ](https://ilab-ar.github.io/DrawInAir/ "DrawInAir: A Lightweight Gestural Interface Based on Fingertip Regression ")
 
 # Links
-Codebase: *will come soon*
-
-Public EgoGestAR Dataset: https://github.com/varunj/EgoGestAR
+Codebase and Public EgoGestAR Dataset: https://github.com/varunj/EgoGestAR
 
 Public Testing Dataset: https://github.com/varunj/EgoGestAR/tree/master/testvideo
 
@@ -28,6 +26,11 @@ These gestures could be applied to different use cases.
 
 # Usage
 
+## testvideo/
+- Lists 240 gesture videos captured in varying environments, lighting conditions and by various users. 
+- 22 videos per class and additional 20 random hand movement videos.
+- File naming convention: testvideo\_*gesturename*\_*serialnumber*.mp4 
+
 ## test/
 - Lists 500 gesture inputs used for testing. 50 gestures per class.
 - File naming convention: test\_*gesturename*\_*serialnumber*.txt 
@@ -50,3 +53,36 @@ These gestures could be applied to different use cases.
 ## train_time/
 - Lists the time taken (in seconds) to perform each training gesture.
 
+
+# Codebase
+
+## 1make_grnd_basic.py
+1. Run to generate ground truth files for left, right, up, down gestures.
+
+## 2make_grnd_gesture.py
+1. Run to generate ground truth for custom gestures and corresponding time taken to draw each gesture.
+2. Gestures saved in gesture_out.txt separated by '----------'.
+
+## 3display_files.py
+1. Reads from the specified folder.
+2. Generates a graphical representation of the gestures in 10 graphs (to interpret the gesture).
+
+## 4generate_results.py
+1. Reads from /seeds and /grnd_sparse and output the result to stdout.
+2. Gives the absolute best match and costs corresponding to each ground truth gesture.
+
+## 5generate_results_realtime.py
+1. Accepts the input gesture during runtime.
+2. Outputs as above in <4generate_results>.
+
+## 6trainRawProcess.py
+1. Reads '-----------' separated gestures and stores as different files.
+
+## 7histogram_gesturelen.py
+1. Outputs a histogram of the length of raw gestures captured.
+
+## 8resample_to_200.py
+1. Up/Down samples raw gestures to 200 length.
+
+## Note
+1. Requires Kivy (https://kivy.org/docs/installation/installation.html)
