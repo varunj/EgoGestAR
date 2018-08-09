@@ -1,4 +1,4 @@
-# **PointGestAR** *(point-gesture)*
+# **DrawInAir** *(draw-in-air)*
 Egocentric pointing gesture videos used for testing of [DrawInAir: A Lightweight Gestural Interface Based on Fingertip Regression ](https://ilab-ar.github.io/DrawInAir/ "DrawInAir: A Lightweight Gestural Interface Based on Fingertip Regression ")
 
 # Links
