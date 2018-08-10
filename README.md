@@ -56,32 +56,28 @@ These gestures could be applied to different use cases.
 
 # Codebase
 
-## 1make_grnd_basic.py
-1. Run to generate ground truth files for left, right, up, down gestures.
+## 1make_grnd_perfect.py
+1. Run to generate ground truth files for gestures.
 
-## 2make_grnd_gesture.py
+## 1make_grnd_gesture.py
 1. Run to generate ground truth for custom gestures and corresponding time taken to draw each gesture.
-2. Gestures saved in gesture_out.txt separated by '----------'.
+2. Gestures saved in train_.txt separated by '----------'.
 
-## 3display_files.py
+## 2display_files.py, 2display_files_combine.py
 1. Reads from the specified folder.
 2. Generates a graphical representation of the gestures in 10 graphs (to interpret the gesture).
 
-## 4generate_results.py
-1. Reads from /seeds and /grnd_sparse and output the result to stdout.
-2. Gives the absolute best match and costs corresponding to each ground truth gesture.
-
-## 5generate_results_realtime.py
+## 3generate_dtw_results_realtime.py
 1. Accepts the input gesture during runtime.
 2. Outputs as above in <4generate_results>.
 
-## 6trainRawProcess.py
+## 4train_raw_process.py
 1. Reads '-----------' separated gestures and stores as different files.
 
-## 7histogram_gesturelen.py
+## 5histogram_stats.py
 1. Outputs a histogram of the length of raw gestures captured.
 
-## 8resample_to_200.py
+## 6resample_to_200.py
 1. Up/Down samples raw gestures to 200 length.
 
 ## Note
