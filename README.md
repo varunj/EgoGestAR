@@ -22,6 +22,7 @@ These gestures could be applied to different use cases.
 *The highlighted point in each gesture indicates the starting position of the gesture.*
 
 ![](https://github.com/varunj/EgoGestAR/blob/master/ztemp_cvpreccv_webpage/pointgestar_img/fig4_fig5.png)
+![](https://github.com/varunj/EgoGestAR/blob/master/z_stats_and_images/table1_stats.png)
 
 
 # Usage
