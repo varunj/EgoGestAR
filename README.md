@@ -1,12 +1,10 @@
 # **EgoGestAR** *(ego-gesture)*
-An egocentric pointing gesture dataset. Developed for [DrawInAir: A Lightweight Gestural Interface Based on Fingertip Regression ](https://ilab-ar.github.io/DrawInAir/ "DrawInAir: A Lightweight Gestural Interface Based on Fingertip Regression ")
+An egocentric pointing gesture dataset.
 
 # Links
 Codebase and Public EgoGestAR Dataset: https://github.com/varunj/EgoGestAR
 
 Public Testing Dataset: https://github.com/varunj/EgoGestAR/tree/master/testvideo
-
-Project Website: https://ilab-ar.github.io/DrawInAir/
 
 
 # The Gestures
